@@ -10,10 +10,12 @@ function oci-curl {
 
     # TODO: update these values to your own
 	# workshop-NNN -in- oracle-serverless-devrel
-  local tenancyId="ocid1.tenancy.oc1..aaaaaaaaydrjm77otncda2xn7qtv7l3hqnd3zxn2u6siwdhniibwfv4wwhta";
-	local authUserId="<your-user-ocid>";
-	local keyFingerprint="2c:bd:7b:5c:76:58:ec:77:6d:9b:f8:3b:be:a6:23:2b";
-	local privateKeyPath="<full-path-to-your-private-key> e.g. /Users/john/labs_pri_key.pem";
+    local tenancyId="ocid1.tenancy.oc1..aaaaaaaaydrjm77otncda2xn7qtv7l3hqnd3zxn2u6siwdhniibwfv4wwhta";
+    #local authUserId="<your-user-ocid>";
+    local authUserId="ocid1.user.oc1..aaaaaaaanzm5cdwpgvxqa2uliiv2j2w2mvl4vzlnfdohkf7h6cq6dlgy2o4a";
+    local keyFingerprint="2c:bd:7b:5c:76:58:ec:77:6d:9b:f8:3b:be:a6:23:2b";
+    #local privateKeyPath="<full-path-to-your-private-key> e.g. /Users/john/labs_pri_key.pem";
+    local privateKeyPath="/home/oracle/functionslab/keys/labs_pri_key.pem";
 
     local alg=rsa-sha256
     local sigVersion="1"
